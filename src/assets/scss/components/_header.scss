@@ -1,0 +1,40 @@
+.header {
+    margin-bottom: 3rem;
+    padding: 1rem 0;
+    background: $grey;
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+    &-item {
+        display: flex;
+        align-items: center;
+        &__list {
+            display: flex;
+            gap: 4rem;
+            li {
+                a {
+                    color: $black;
+                }
+            }
+        }
+        &_lang {
+            margin-left: auto;
+            padding: 0rem .8rem;
+            border: 1px solid $black;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    }
+    &-aside {
+        background: $grey;
+    }
+    &-pad {
+        height: 100vh;
+        padding: 0 2rem;
+    }
+    &-center {
+        margin-left: 2rem;
+    }
+}

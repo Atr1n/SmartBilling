@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>News</title>
+	</head>
+
+	<body>
+
+		<header class="header">
+			<div class="container">
+				<div class="header__content">
+					<div class="header-item header-item_logo">
+						<a href="#">
+							<img src="assets/img/header-logo.svg" alt="Epc Group">
+						</a>
+						<div class="navBurger" role="navigation" id="navToggle"></div>
+					</div>
+					<nav class="header-item header-item_links">
+						<ul class="header-item__list">
+							<li><a class="section-text" href="#">О компании</a></li>
+							<li><a class="section-text" href="#">Направления</a></li>
+							<li><a class="section-text" href="#">Проекты</a></li>
+						</ul>
+					</nav>
+					<div class="header-item header-item_lang">
+						<div class="header-item__lang">
+                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.646447 0.853553C0.451184 0.658291 0.451184 0.341709 0.646447 0.146447C0.841709 -0.0488155 1.15829 -0.0488155 1.35355 0.146447L0.646447 0.853553ZM4 3.5L4.35355 3.85355C4.25978 3.94732 4.13261 4 4 4C3.86739 4 3.74021 3.94732 3.64645 3.85355L4 3.5ZM6.64645 0.146447C6.84171 -0.0488155 7.15829 -0.0488155 7.35355 0.146447C7.54882 0.341709 7.54882 0.658291 7.35355 0.853553L6.64645 0.146447ZM1.35355 0.146447L4.35355 3.14645L3.64645 3.85355L0.646447 0.853553L1.35355 0.146447ZM3.64645 3.14645L6.64645 0.146447L7.35355 0.853553L4.35355 3.85355L3.64645 3.14645Z" fill="#2A3133"/>
+                            </svg>
+							РУС
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__inner overlay">
+				<nav class="header__inner-content overlayMenu">
+					<div class="header__inner-item">
+						<aside class="header-aside header-pad">
+							<div class="header__inner-title">
+								<h2 class="section-title-medium">О компании</h2>
+							</div>
+							<ul class="header__inner-list">
+								<li><a class="section-text-small" href="#">Сотрудники</a></li>
+								<li><a class="section-text-small" href="#">Статьи \ Блог</a></li>
+								<li><a class="section-text-small" href="#">Сертификаты</a></li>
+								<li><a class="section-text-small" href="#">Вакансии</a></li>
+							</ul>
+							<ul class="header__inner-desc">
+								<li><a class="section-title-medium" href="#">Проекты</a></li>
+								<li><a class="section-title-medium" href="#">Контакты</a></li>
+							</ul>
+							<div class="header__inner-last">
+                                <a class="header__inner-social" href="mailto:info@epc.group">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.44772 20.5523 5 20 5Z" stroke="#2A3133" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3 6L12.2571 13L21 6" stroke="#2A3133" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <p class="section-text-small">info@epc.group</p>
+                                </a>
+                                <div class="header__inner-social">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.50289 2.25722L6.57441 2.62861V2.62861L7.50289 2.25722ZM8.55715 4.89288L9.48563 4.52149V4.52149L8.55715 4.89288ZM8.23664 6.91603L9.00486 7.55621V7.55621L8.23664 6.91603ZM7.66925 7.5969L8.43747 8.23708L7.66925 7.5969ZM7.79148 10.2915L7.08437 10.9986L7.79148 10.2915ZM9.70852 12.2085L10.4156 11.5014L9.70852 12.2085ZM12.4031 12.3307L11.7629 11.5625L12.4031 12.3307ZM13.084 11.7634L13.7242 12.5316L13.7242 12.5316L13.084 11.7634ZM15.1071 11.4428L14.7357 12.3713L15.1071 11.4428ZM17.7428 12.4971L18.1142 11.5686L17.7428 12.4971ZM2.89474 2H5.64593V0H2.89474V2ZM6.57441 2.62861L7.62867 5.26427L9.48563 4.52149L8.43136 1.88583L6.57441 2.62861ZM7.46842 6.27585L6.90103 6.95672L8.43747 8.23708L9.00486 7.55621L7.46842 6.27585ZM7.08437 10.9986L9.00141 12.9156L10.4156 11.5014L8.49859 9.58437L7.08437 10.9986ZM13.0433 13.099L13.7242 12.5316L12.4438 10.9951L11.7629 11.5625L13.0433 13.099ZM14.7357 12.3713L17.3714 13.4256L18.1142 11.5686L15.4785 10.5144L14.7357 12.3713ZM18 14.3541V17.1053H20V14.3541H18ZM17.1053 18C8.76286 18 2 11.2371 2 2.89474H0C0 12.3417 7.65829 20 17.1053 20V18ZM18 17.1053C18 17.5994 17.5994 18 17.1053 18V20C18.704 20 20 18.704 20 17.1053H18ZM17.3714 13.4256C17.751 13.5775 18 13.9452 18 14.3541H20C20 13.1274 19.2531 12.0242 18.1142 11.5686L17.3714 13.4256ZM13.7242 12.5316C14.0063 12.2964 14.3947 12.2349 14.7357 12.3713L15.4785 10.5144C14.4554 10.1051 13.2903 10.2897 12.4438 10.9951L13.7242 12.5316ZM9.00141 12.9156C10.0986 14.0128 11.8513 14.0923 13.0433 13.099L11.7629 11.5625C11.3656 11.8936 10.7813 11.8671 10.4156 11.5014L9.00141 12.9156ZM6.90103 6.95672C5.90771 8.1487 5.98722 9.90143 7.08437 10.9986L8.49859 9.58437C8.13287 9.21866 8.10637 8.63441 8.43747 8.23708L6.90103 6.95672ZM7.62867 5.26427C7.76509 5.6053 7.70356 5.99367 7.46842 6.27585L9.00486 7.55621C9.71029 6.7097 9.89487 5.54459 9.48563 4.52149L7.62867 5.26427ZM5.64593 2C6.05484 2 6.42255 2.24895 6.57441 2.62861L8.43136 1.88583C7.97577 0.746853 6.87265 0 5.64593 0V2ZM2.89474 0C1.29602 0 0 1.29602 0 2.89474H2C2 2.40059 2.40059 2 2.89474 2V0Z" fill="#2A3133"/>
+                                    </svg>
+                                    <a class="section-text-small" href="tel:87273395061">+7 (727) 339 50 61</a>
+                                    <a class="section-text-small" href="tel:87273395062">+7 (727) 339 50 62</a>
+                                </div>
+                            </div>
+						</aside>
+					</div>
+                    <div class="header__inner-item">
+                        <div class="header-pad header-center">
+                            <div class="header__inner-title">
+                                <h2 class="section-title-medium">Направления</h2>
+                            </div>
+                            <ul class="header__inner-list">
+                                <li><a href="#">Изыскания</a></li>
+                                <li><a href="#">Проектирование</a></li>
+                                <li><a href="#">Поставка материалов и оборудования </a></li>
+                                <li><a href="#">Промышленное и гражданское строительство </a></li>
+                                <li><a href="#">Техническое обслуживание</a></li>
+                                <li><a href="#">Электромонтажные работы</a></li>
+                                <li><a href="#">Техническое обслуживание смонтированных систем</a></li>
+                                <li><a href="#">Мобилизация строительной техники</a></li>
+                                <li><a href="#">Услуги промышленной безопасности </a></li>
+                                <li><a href="#">Подготовка специалистов и работников в промышленной безопасности</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__inner-item">
+                        <div class="header-pad">
+                            <div class="header__inner-img">
+                                <img src="assets/img/header-inner-1.png" alt="Наш Проект">
+                            </div>
+                            <div class="header__inner-img">
+                                <img src="assets/img/header-inner-2.png" alt="Скачайте PDF презентацию">
+                            </div>
+                            <div class="header__inner-img header__inner-item-adress">
+                                <div class="header__inner-item-adress_desc">
+                                    <h3 class="section-title-medium">Наш адрес:</h3>
+                                    <p class="section-text-small"> 
+                                        Республика Казахстан, город Алматы, Бостандыкский район, 
+                                        проспект С.Сейфуллина, 609, БЦ "Forum", 5 этаж.
+                                    </p>
+                                </div>
+                                <div class="header__inner-item-adress_map">
+                                    <iframe	iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1907ff41346b9841bb025021141a4383a38e6a12001dd032255637b69e382ceb&amp;source=constructor" width="200" height="100%" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</nav>
+			</div>
+		</header>
+
+		<section class="news section">
+            <div class="container">
+                <div class="news__title">
+                    <div class="news__title-item">
+                        <h1 class="section-title">Статьи</h1>
+                        <div class="news-title__inner">
+                            <svg width="19" height="37" viewBox="0 0 19 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.292893 27.7067C-0.0976311 27.3162 -0.0976311 26.6831 0.292893 26.2925C0.683418 25.902 1.31658 25.902 1.70711 26.2925L0.292893 27.7067ZM9.22368 35.2233L9.93079 35.9304C9.74325 36.118 9.4889 36.2233 9.22368 36.2233C8.95847 36.2233 8.70411 36.118 8.51658 35.9304L9.22368 35.2233ZM16.7403 26.2925C17.1308 25.902 17.764 25.902 18.1545 26.2925C18.545 26.6831 18.545 27.3162 18.1545 27.7067L16.7403 26.2925ZM1.70711 26.2925L9.93079 34.5162L8.51658 35.9304L0.292893 27.7067L1.70711 26.2925ZM8.51658 34.5162L16.7403 26.2925L18.1545 27.7067L9.93079 35.9304L8.51658 34.5162Z" fill="#1348AC"/>
+                                <path d="M8.22363 35C8.22363 35.5523 8.67135 36 9.22363 36C9.77592 36 10.2236 35.5523 10.2236 35L8.22363 35ZM10.2236 1C10.2236 0.447715 9.77592 -2.41411e-08 9.22363 0C8.67135 2.41411e-08 8.22363 0.447715 8.22363 1L10.2236 1ZM10.2236 35L10.2236 1L8.22363 1L8.22363 35L10.2236 35Z" fill="#1348AC"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="news__title-item news__title-item_right">
+                        <p class="section-text">
+                            Актуальные новости
+                            нашей компании
+                        </p>
+                    </div>
+                </div>
+                <section class="news-media section">
+                    <div class="news-media__filter">
+                        <input class="input-filter" type="text" placeholder="Фильтр по дате">
+                    </div>
+                    <div class="news-media__content">
+                        <div class="news-media__item">
+                            <div class="news-media__item_img">
+                                <img src="assets/img/section-news/news-media-bg-1.jpg" alt="Новость">
+                                <h2 class="section-title-medium">
+                                    Электромонтажные работы
+                                </h2>
+                            </div>
+                            <div class="news-media__item_date">
+                                <span class="section-text-small">1.02.2022</span>
+                                <a class="section-text-small" href="#">
+                                    Подробнее
+                                    <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.3536 4.85355C15.5488 4.65829 15.5488 4.34171 15.3536 4.14645L12.1716 0.964466C11.9763 0.769204 11.6597 0.769204 11.4645 0.964466C11.2692 1.15973 11.2692 1.47631 11.4645 1.67157L14.2929 4.5L11.4645 7.32843C11.2692 7.52369 11.2692 7.84027 11.4645 8.03553C11.6597 8.2308 11.9763 8.2308 12.1716 8.03553L15.3536 4.85355ZM15 4L0 4L0 5L15 5V4Z" fill="#1348AC"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news-media__item">
+                            <div class="news-media__item_img">
+                                <img src="assets/img/section-news/news-media-bg-1.jpg" alt="Новость">
+                                <h2 class="section-title-medium">
+                                    Подготовка, переподготовка специалистов 
+                                    и
+                                    работников
+                                </h2>
+                            </div>
+                            <div class="news-media__item_date">
+                                <span class="section-text-small">1.02.2022</span>
+                                <a class="section-text-small" href="#">
+                                    Подробнее
+                                    <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.3536 4.85355C15.5488 4.65829 15.5488 4.34171 15.3536 4.14645L12.1716 0.964466C11.9763 0.769204 11.6597 0.769204 11.4645 0.964466C11.2692 1.15973 11.2692 1.47631 11.4645 1.67157L14.2929 4.5L11.4645 7.32843C11.2692 7.52369 11.2692 7.84027 11.4645 8.03553C11.6597 8.2308 11.9763 8.2308 12.1716 8.03553L15.3536 4.85355ZM15 4L0 4L0 5L15 5V4Z" fill="#1348AC"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news-media__item">
+                            <div class="news-media__item_img">
+                                <img src="assets/img/section-news/news-media-bg-1.jpg" alt="Новость">
+                                <h2 class="section-title-medium">
+                                    Подготовка, переподготовка специалистов 
+                                    и
+                                    работников
+                                </h2>
+                            </div>
+                            <div class="news-media__item_date">
+                                <span class="section-text-small">1.02.2022</span>
+                                <a class="section-text-small" href="#">
+                                    Подробнее
+                                    <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.3536 4.85355C15.5488 4.65829 15.5488 4.34171 15.3536 4.14645L12.1716 0.964466C11.9763 0.769204 11.6597 0.769204 11.4645 0.964466C11.2692 1.15973 11.2692 1.47631 11.4645 1.67157L14.2929 4.5L11.4645 7.32843C11.2692 7.52369 11.2692 7.84027 11.4645 8.03553C11.6597 8.2308 11.9763 8.2308 12.1716 8.03553L15.3536 4.85355ZM15 4L0 4L0 5L15 5V4Z" fill="#1348AC"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news-media__item">
+                            <div class="news-media__item_img">
+                                <img src="assets/img/section-news/news-media-bg-1.jpg" alt="Новость">
+                                <h2 class="section-title-medium">
+                                    Подготовка, переподготовка специалистов 
+                                    и
+                                    работников
+                                </h2>
+                            </div>
+                            <div class="news-media__item_date">
+                                <span class="section-text-small">1.02.2022</span>
+                                <a class="section-text-small" href="#">
+                                    Подробнее
+                                    <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.3536 4.85355C15.5488 4.65829 15.5488 4.34171 15.3536 4.14645L12.1716 0.964466C11.9763 0.769204 11.6597 0.769204 11.4645 0.964466C11.2692 1.15973 11.2692 1.47631 11.4645 1.67157L14.2929 4.5L11.4645 7.32843C11.2692 7.52369 11.2692 7.84027 11.4645 8.03553C11.6597 8.2308 11.9763 8.2308 12.1716 8.03553L15.3536 4.85355ZM15 4L0 4L0 5L15 5V4Z" fill="#1348AC"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news-media__item">
+                            <div class="news-media__item_img">
+                                <img src="assets/img/section-news/news-media-bg-1.jpg" alt="Новость">
+                                <h2 class="section-title-medium">
+                                    Подготовка, переподготовка специалистов 
+                                    и
+                                    работников
+                                </h2>
+                            </div>
+                            <div class="news-media__item_date">
+                                <span class="section-text-small">1.02.2022</span>
+                                <a class="section-text-small" href="#">
+                                    Подробнее
+                                    <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.3536 4.85355C15.5488 4.65829 15.5488 4.34171 15.3536 4.14645L12.1716 0.964466C11.9763 0.769204 11.6597 0.769204 11.4645 0.964466C11.2692 1.15973 11.2692 1.47631 11.4645 1.67157L14.2929 4.5L11.4645 7.32843C11.2692 7.52369 11.2692 7.84027 11.4645 8.03553C11.6597 8.2308 11.9763 8.2308 12.1716 8.03553L15.3536 4.85355ZM15 4L0 4L0 5L15 5V4Z" fill="#1348AC"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news-media__item">
+                            <div class="news-media__item_img">
+                                <img src="assets/img/section-news/news-media-bg-1.jpg" alt="Новость">
+                                <h2 class="section-title-medium">
+                                    Подготовка, переподготовка специалистов 
+                                    и
+                                    работников
+                                </h2>
+                            </div>
+                            <div class="news-media__item_date">
+                                <span class="section-text-small">1.02.2022</span>
+                                <a class="section-text-small" href="#">
+                                    Подробнее
+                                    <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.3536 4.85355C15.5488 4.65829 15.5488 4.34171 15.3536 4.14645L12.1716 0.964466C11.9763 0.769204 11.6597 0.769204 11.4645 0.964466C11.2692 1.15973 11.2692 1.47631 11.4645 1.67157L14.2929 4.5L11.4645 7.32843C11.2692 7.52369 11.2692 7.84027 11.4645 8.03553C11.6597 8.2308 11.9763 8.2308 12.1716 8.03553L15.3536 4.85355ZM15 4L0 4L0 5L15 5V4Z" fill="#1348AC"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+		</section>
+		
+ 	</body>
+</html>

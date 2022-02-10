@@ -1,0 +1,16 @@
+.contacts {
+    height: 100vh;
+    &__content {
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        height: 100vh;
+    }
+    &__item {
+        &_map {
+            iframe {
+                border-radius: 25px;
+                height: 500px;
+            }
+        }
+    }
+}

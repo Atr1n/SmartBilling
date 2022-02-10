@@ -3,114 +3,76 @@
 @import 'utils/fonts';
 @import 'utils/reset';
 
-
 @import 'components/header';
-@import 'components/footer';
+@import 'components/header-inner';
+@import 'components/header-burger';
 
-@import 'components/main';
-@import 'components/method';
-@import 'components/prog';
-@import 'components/progin';
-@import 'components/video';
-@import 'components/authors';
-@import 'components/products';
-@import 'components/comments';
-@import 'components/reason';
+@import 'components/section-news';
+@import 'components/section-news-inner';
 
-@import 'components/modals';
-@import 'components/globus';
+@import 'components/section-contacts';
 
-@import 'components/swiperArrow';
-@import 'components/burger';
-@import 'components/cibk';
-
-
-.main-bg {
-	background: url(../img/main-bg.jpg) bottom no-repeat;
-	background-size: cover;
+.container {
+    width: 100%;
+    max-width: 1920px;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+    @media only screen and (max-width: 1200px) {
+        max-width: 1100px;
+        padding-right: 1.6rem;
+        padding-left: 1.6rem;
+    }
 }
 
-.last-bg {
-	padding: 2rem 0;
-	background: url(../img/last-bg.jpg) center no-repeat;
-	background-size: cover;
+.section {
+    padding-bottom: 3.2rem;
+    background: $grey;
 }
 
-.main-btn {
-	a {
-		padding: 1rem 3.5rem;
-		background: linear-gradient(0deg, #2F5C48 0%, rgba(105, 180, 146, 0.28) 100%),#008000;
-		box-shadow: 0px 4px 4px rgba(4, 67, 85, 0.8);
-		border-radius: 120px;
-		color: $yellow;
-		font-size: $size16;
-		font-weight: 500;
-		text-transform: uppercase;
-		cursor: pointer;
-	}
+.section-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    color: $black;
 }
 
-.span-blue {
-	color: $blue;
+.section-title-medium {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
 }
 
-.span-darkGreen {
-	color: $darkGreen;
+.section-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
 }
 
-.span-darkOrange {
-	color: $darkOrange;
-}
-
-.mainTitle {
-	font-size: $size36;
-	line-height: 150%;
-	letter-spacing: 0.01em;
-	text-align: center;
-	font-weight: 600;
-	@media screen and (max-width: 456px) {
-		font-size: $size23;
-		line-height: 130%;
-	}
-}
-
-.secondTitle {
-	font-size: $size25;
-	line-height: 150%;
-	letter-spacing: 0.01em;
-	text-align: center;
-	@media screen and (max-width: 456px) {
-		font-size: $size16;
-	}
+.section-text-small {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
 }
 
 html {
 	height: 100%;
 	line-height: $mainLineHeight;
 	letter-spacing: 0.01em;
-	font-size: $size16;
-	color: $darkOrange;
-	@media screen and (max-width: $desktopWidth) {
-		font-size: 16px;
-	}
-	@media screen and (max-width: $tableWidth) {
-		font-size: 15px;
-	}
-	@media screen and (max-width: $phoneWidth) {
-		font-size: 14px;
-	}
+    background: $grey;
+    font-family: $mainFont;
 }
 
 body {
 	padding: 0;
 	margin: 0;
-	font-family: $mainFont;
 	font-size: $size16;
-	font-weight: $fw600;
-	color: $darkOrange;
-	letter-spacing: 0.01em;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+    font-family: $mainFont;
 }
 
 *,
@@ -137,32 +99,4 @@ li {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-}
-
-section, .section {
-	position: relative;
-	padding: 1.5rem 0;
-	@media screen and (max-width: $smDesktopWidth) {
-		padding: 1rem 0;
-	}
-}
-
-.container {
-	width: 100%;
-	flex: 0 0 auto;
-	position: relative;
-	margin: 0 auto;
-	max-width: $desktopWidth;
-	@media screen and (max-width: $smDesktopWidth) {
-		max-width: $tableWidth;
-	}
-	@media screen and (max-width: $tableWidth) {
-		max-width: $phoneWidth;
-	}
-	@media screen and (max-width: $phoneWidth) {
-		max-width: $smPhoneWidth;
-	}
-	@media screen and (max-width: $smPhoneWidth) {
-		max-width: $smContainerWidth;
-	}
 }
