@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title>
+    <title>vacancies</title>
 </head>
 <body class="blue-bg">
 
@@ -119,46 +119,108 @@
         </div>
 	</header>
 
-    <section class="contacts section blue-bg">
+    <section class="vacancies section section-blue-bg">
         <div class="container">
-            <div class="contacts__content">
-                <div class="contacts__item">
-                    <div class="contacts__item_title">
-                        <h1 class="size40 white">
-                            Контакты
-                        </h1>
+            <div class="vacancies__title">
+                <h1 class="size40 white">
+                    Вакансии
+                </h1>
+            </div>
+            <ul class="vacancies__content">
+                <li class="accordion vacancies__item">
+                    <div class="accordion__control vacancies__item_title" aria-expanded="false">
+                        <h2 class="accTitle white size16" aria-expanded="true">
+                            Технический специалист
+                        </h2>
+                        <p class="white size16">Нур-Султан</p>
                     </div>
-                    <div class="contacts__item_social">
+                    <div class="accordion__content vacancies__item_text" aria-hidden="true">
+                        <p class="white size14"> 
+                            dsadsadsadsa
+                        </p>
+                    </div>
+                </li>    
+                <li class="accordion vacancies__item">
+                    <div class="accordion__control vacancies__item_title" aria-expanded="false">
+                        <h2 class="accTitle white size16" aria-expanded="true">
+                            Технический специалист
+                        </h2>
+                        <p class="white size16">Нур-Султан</p>
+                    </div>
+                    <div class="accordion__content vacancies__item_text" aria-hidden="true">
+                        <p class="white size14"> 
+                            dsadsadsadsa
+                        </p>
+                    </div>
+                </li>    
+                <li class="accordion vacancies__item">
+                    <div class="accordion__control vacancies__item_title" aria-expanded="false">
+                        <h2 class="accTitle white size16" aria-expanded="true">
+                            Технический специалист
+                        </h2>
+                        <p class="white size16">Нур-Султан</p>
+                    </div>
+                    <div class="accordion__content vacancies__item_text" aria-hidden="true">
+                        <p class="white size14"> 
+                            dsadsadsadsa
+                        </p>
+                    </div>
+                </li>    
+            </ul>
+
+            <div class="vacancies__qua">
+                <div class="vacancies__qua_item">
+                    <div class="vacancies__qua_item_title">
+                        <h3 class="size16 white">По всем вопросам:</h3>
+                    </div>
+                    <div class="vacancies__qua_item_links">
                         <a class="size24 white" href="tel:87273395061">+7 (727) 339 5061</a>
                         <a class="size24 white" href="tel:87273395062">+7 (727) 339 5062</a>
                     </div>
-                    <div class="contacts__item_social">
-                        <a class="size16 white" href="mailto:info@epc.group">
-                            e-mail: info@epc.group
+                </div>
+                <div class="vacancies__qua_item">
+                    <div class="vacancies__qua_item_title">
+                        <h3 class="size16 white">Резюме отправляйте на почту:</h3>
+                    </div>
+                    <div class="vacancies__qua_item_links">
+                        <a class="size24 white" href="mailto:info@epc.group">
+                            info@epc.group
                         </a>
                     </div>
-                    <div class="contacts__item_border">
-                        <span></span>
-                    </div>
-                    <div class="contacts__item_text">
-                        <p class="size16 white">
-                            Республика Казахстан, 
-                            город Алматы, Бостандыкский район, 
-                        </p>
-                    </div>
-                    <div class="contacts__item_text">
-                        <p class="size24 white">
-                            проспект С.Сейфуллина, 609, 
-                            БЦ "Forum", 5 этаж. 
-                        </p>
-                    </div>
-                </div>
-                <div class="contacts__item_map">
-                    <iframe	iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1907ff41346b9841bb025021141a4383a38e6a12001dd032255637b69e382ceb&amp;source=constructor" width="100%" height="550" frameborder="0"></iframe>
                 </div>
             </div>
         </div>
     </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const accordions = document.querySelectorAll('.accordion');
+
+            accordions.forEach(el => {
+                el.addEventListener('click', (e) => {
+                    const self = e.currentTarget;
+                    const control = self.querySelector('.accordion__control');
+                    const content = self.querySelector('.accordion__content');
+
+                    const accDef = document.querySelector('.accDef');
+                    const accNew = document.querySelector('.accNew');
+
+                    const accTitle = document.querySelector('.accTitle');
+                    
+                    self.classList.toggle('open');
+
+                    // если открыт аккордеон
+                    if (self.classList.contains('open')) {
+                        control.setAttribute('aria-expanded', true);
+                        content.setAttribute('aria-hidden', false);
+                    } else {
+                        control.setAttribute('aria-expanded', false);
+                        content.setAttribute('aria-hidden', true);
+                    }
+                });
+            });
+        });
+    </script>
     
 </body>
 </html>

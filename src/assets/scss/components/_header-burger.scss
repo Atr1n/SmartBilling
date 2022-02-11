@@ -3,7 +3,6 @@
 	height: 25px;
 	margin-top: 0.5rem;
 	margin-left: 4rem;
-	background: $black;
 	box-sizing: border-box;
 	background-clip: content-box;
 	border-top: 11px solid transparent;
@@ -14,11 +13,20 @@
 	cursor: pointer;
 }
 
+.navBurger-white-bg:after,
+.navBurger-white-bg:before {
+    background: $white;
+}
+
+.navBurger-black-bg:after,
+.navBurger-black-bg:before {
+    background: $black;
+}
+
 .navBurger:after,
 .navBurger:before {
 	content: "";
 	position: absolute;
-	background: $black;
 	height: 3px;
 	width: 100%;
 	right: 0;

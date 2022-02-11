@@ -3,19 +3,21 @@
 @import 'utils/fonts';
 @import 'utils/reset';
 
+
 @import 'components/header';
 @import 'components/header-inner';
 @import 'components/header-burger';
 
 @import 'components/section-news';
 @import 'components/section-news-inner';
+@import 'components/section-vacancies';
 
 @import 'components/section-contacts';
 
 .container {
     width: 100%;
     max-width: 1920px;
-    padding: 0 3.2rem;
+    padding: 0 3rem;
     margin: 0 auto;
     @media only screen and (max-width: 1200px) {
         max-width: 1100px;
@@ -24,34 +26,88 @@
     }
 }
 
-.section {
-    padding-bottom: 3.2rem;
+.blue {
+    color: $blue;
+}
+
+.blue-bg {
+    background: $blue;
+}
+
+.white {
+    color: $white;
+}
+
+.white-bg {
+    background: $white;
+}
+
+.white-border {
+    padding: 0rem .8rem;
+    border: 1px solid $white;
+    border-radius: 20px;
+}
+
+.grey {
+    color: $grey;
+}
+
+.grey-bg {
     background: $grey;
 }
 
-.section-title {
+.black {
+    color: $black;
+}
+
+.black-border {
+    padding: 0rem .8rem;
+    border: 1px solid $black;
+    border-radius: 20px;
+}
+
+.black-bg {
+    background: $black;
+}
+
+.blue-bg {
+    background: $blue;
+}
+
+.grey-bg {
+    background: $grey;
+}
+
+.section {
+    padding: 3rem 0;
+}
+
+.section-blue-bg {
+    background: $blue;
+}
+
+.size40 {
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
     line-height: 49px;
-    color: $black;
 }
 
-.section-title-medium {
+.size24 {
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
 }
 
-.section-text {
+.size16 {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
 }
 
-.section-text-small {
+.size14 {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -62,7 +118,6 @@ html {
 	height: 100%;
 	line-height: $mainLineHeight;
 	letter-spacing: 0.01em;
-    background: $grey;
     font-family: $mainFont;
 }
 
@@ -92,6 +147,7 @@ h6 {
 
 a {
 	text-decoration: none;
+    color: $black;
 }
 
 ul,

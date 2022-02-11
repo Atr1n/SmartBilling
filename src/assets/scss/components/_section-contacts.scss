@@ -1,15 +1,35 @@
 .contacts {
-    height: 100vh;
     &__content {
+        height: 100vh;
         display: grid;
         grid-template-columns: 40% 1fr;
-        height: 100vh;
+        gap: 1.5rem;
     }
     &__item {
+        &_title {
+            margin-bottom: 4.5rem;
+        }
+        &_social {
+            display: grid;
+            margin-bottom: 1.5rem;
+        }
+        &_border {
+            width: 150px;
+            height: 1px;
+            margin: 4rem 0;
+            background: $white;
+        }
+        &_text {
+            margin-top: 2rem;
+            p {
+                width: 90%;
+            }
+        }
         &_map {
             iframe {
+                width: 100%;
+                display: block;
                 border-radius: 25px;
-                height: 500px;
             }
         }
     }
