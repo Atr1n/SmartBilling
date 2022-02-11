@@ -13,6 +13,9 @@
 @import 'components/section-vacancies';
 
 @import 'components/section-contacts';
+@import 'components/section-employees';
+@import 'components/section-directions';
+@import 'components/section-about';
 
 .container {
     width: 100%;
@@ -23,6 +26,23 @@
         max-width: 1100px;
         padding-right: 1.6rem;
         padding-left: 1.6rem;
+    }
+}
+
+.pages__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    h1 {
+        margin-bottom: 2rem;
+    }
+
+    p {
+        padding: 0 15rem;
+    }
+    &_about {
+        padding: 0 15rem;
     }
 }
 

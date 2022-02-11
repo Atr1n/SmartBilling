@@ -2,25 +2,12 @@
     height: 100vh;
     &__title {
         position: relative;
-        display: flex;
+        display: grid;
         justify-content: center;
         align-items: center;
-        &-item {
-            &_right {
-                margin-left: 5rem;
-                p {
-                    width: 180px;
-                    color: $blue;
-                }
-            }
-        }
-        &__inner {
-            display: flex;
-            gap: 1rem;
-            margin-left: 5rem;
-            svg {
-                margin-top: 1rem;
-            }
+        text-align: center;
+        h1 {
+            margin-bottom: 1.5rem;
         }
     }
 

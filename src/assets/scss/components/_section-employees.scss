@@ -1,0 +1,44 @@
+.employees {
+    &__title {
+        display: flex;
+        justify-content: center;
+    }
+    &__content {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin-top: 3rem;
+    }
+    &__item {
+        width: 333px;
+        gap: 1.5rem;
+        padding: 1rem 1.5rem 0;
+        background: #E5E5E5;
+        border-radius: 15px;
+        &-big {
+            width: 717px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            padding: 0 1.5rem;
+            background: #E5E5E5;
+            border-radius: 15px;
+        }
+        &_title {
+            h2 {
+                margin-bottom: 1rem;
+            }
+            p {
+                margin-bottom: 1rem;
+            }
+        }
+        &_img {
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.about {
+    &__content {
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2rem;
+        &-2 {
+            margin-top: -5rem;
+        }
+        &_desc {
+            width: 60%;
+            margin-top: 3rem;
+            h2 {
+                margin-bottom: 1rem;
+            }
+            h3 {
+                position: relative;
+                top: -3rem;
+                left: 10rem;
+                display: flex;
+                justify-content: center;
+            }
+            p {
+                margin-bottom: 1rem;
+            }
+            &-2 {
+                width: 65%;
+            }
+        }
+        &_img {
+            position: relative;
+            top: -3rem;
+            img {
+                height: 100%;
+                max-height: 350px;
+                border-radius: 15px;
+            }
+            &-2 {
+                position: relative;
+                top: -8rem;
+            }
+        }
+    }
+}
