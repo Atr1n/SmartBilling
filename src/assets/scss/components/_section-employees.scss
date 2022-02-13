@@ -25,9 +25,15 @@
             padding: 0 1.5rem;
             background: #E5E5E5;
             border-radius: 15px;
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+                display: grid;
+                padding: 1rem 1.5rem 0;
+            }
         }
         &_title {
             h2 {
+                width: 30%;
                 margin-bottom: 1rem;
             }
             p {

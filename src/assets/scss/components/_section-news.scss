@@ -6,6 +6,9 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        @media only screen and (max-width: 768px) {
+            text-align: left;
+        }
         h1 {
             margin-bottom: 1.5rem;
         }
@@ -15,6 +18,9 @@
 
     &-media {
         margin-top: 3rem;
+        @media only screen and (max-width: 768px) {
+            margin-top: 0;
+        }
         &__filter {
             input {
                 width: 166px;
@@ -30,11 +36,18 @@
             flex-wrap: wrap;
             gap: 4rem;
             margin-top: 2rem;
+            @media only screen and (max-width: 768px) {
+                display: grid;
+                gap: 0;
+            }
         }
         &__item {
             width: 30%;
             margin-bottom: 2rem;
             border-radius: 20px;
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+            }
             &_img {
                 position: relative;
                 background: $white;

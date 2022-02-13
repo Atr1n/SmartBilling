@@ -8,6 +8,8 @@
 @import 'components/header-inner';
 @import 'components/header-burger';
 
+@import 'components/mainPage';
+
 @import 'components/section-news';
 @import 'components/section-news-inner';
 @import 'components/section-vacancies';
@@ -16,6 +18,7 @@
 @import 'components/section-employees';
 @import 'components/section-directions';
 @import 'components/section-about';
+@import 'components/section-projects';
 
 .container {
     width: 100%;
@@ -34,15 +37,27 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    @media only screen and (max-width: 768px) {
+        text-align: left;
+    }
     h1 {
         margin-bottom: 2rem;
+        @media only screen and (max-width: 768px) {
+            margin-bottom: 1rem;
+        }
     }
 
     p {
         padding: 0 15rem;
+        @media only screen and (max-width: 768px) {
+            padding: 0;
+        }
     }
     &_about {
         padding: 0 15rem;
+        @media only screen and (max-width: 768px) {
+            padding: 0;
+        }
     }
 }
 
@@ -111,6 +126,10 @@
     font-weight: 500;
     font-size: 40px;
     line-height: 49px;
+    @media only screen and (max-width: 768px) {
+        font-size: 24px;
+        line-height: 29px;
+    }
 }
 
 .size24 {
@@ -118,6 +137,10 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
+    @media only screen and (max-width: 768px) {
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
 
 .size16 {
@@ -125,6 +148,10 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
+    @media only screen and (max-width: 768px) {
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
 
 .size14 {
@@ -132,6 +159,22 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
+}
+
+.item-more {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        text-decoration: underline;
+    }
+}
+
+html,body {
+    @media only screen and (max-width: 768px) {
+        overflow-x: hidden;
+    }
 }
 
 html {
