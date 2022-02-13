@@ -6,6 +6,7 @@
         top: 0;
         width: 100%;
         padding: 1rem 0;
+        z-index: 999;
     }
     &__content {
         display: grid;
@@ -25,6 +26,17 @@
         &_lang {
             margin-left: auto;
             cursor: pointer;
+        }
+        &_search {
+            margin-right: 1rem;
+            label {
+                padding: 0.3rem 1rem;
+                background: #fff;
+                input {
+                    width: 120px;
+                    background: none;
+                }
+            }
         }
     }
     &-aside {

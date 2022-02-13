@@ -109,16 +109,25 @@
     background: $blue;
 }
 
-.grey-bg {
-    background: $grey;
-}
-
 .section {
     padding: 3rem 0;
 }
 
 .section-blue-bg {
     background: $blue;
+}
+
+.size60 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 73px;
+    color: $white;
+    @media only screen and (max-width: 768px) {
+        font-size: 24px;
+        line-height: 29px;
+        color: $blue;
+    }
 }
 
 .size40 {
