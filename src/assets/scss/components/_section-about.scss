@@ -29,7 +29,7 @@
         }
         &_img {
             position: relative;
-            top: -3rem;
+            top: -6rem;
             img {
                 object-fit: cover;
                 width: 100%;
@@ -48,7 +48,6 @@
     
     &__content {
         display: flex;
-        flex-wrap: wrap;
         gap: 5rem;
         margin-top: 2rem;
     }
@@ -60,6 +59,13 @@
             }
             h2 {
                 margin-bottom: 2rem;
+                @media only screen and (max-width: 1536px) {
+                    margin-bottom: 1rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 30px;
+                    line-height: 39px;
+                }
             }
             h4 {
                 margin-bottom: 1rem;
@@ -70,6 +76,12 @@
             }
             &_mis {
                 margin-bottom: 10rem;
+                @media only screen and (max-width: 1746px) {
+                    margin-bottom: 5rem;
+                }
+                @media only screen and (max-width: 1536px) {
+                    margin-bottom: 2rem;
+                }
             }
         }
         &_img {
@@ -83,6 +95,9 @@
             &_last {
                 position: relative;
                 top: -6rem;
+                @media only screen and (max-width: 1466px) {
+                    top: 0;
+                }
             }
         }
     }
@@ -92,7 +107,8 @@
             display: flex;
         }
         &__item {
-            width: 70%;
+            width: 100%;
+            position: relative;
             &:first-child {
                 padding: 5rem 0;
                 padding-left: 3%;
@@ -100,18 +116,14 @@
                 border-top-right-radius: 15px;
                 border-bottom-right-radius: 15px;
             }
-            &:last-child {
-                position: relative;
-                top: 10rem;
-            }
             &_img {
                 position: relative;
-                right: 20%;
+                top: 10rem;
+                right: 10rem;
                 display: flex;
                 gap: 4rem;
-
                 img {
-                    height: 450px;
+                    width: 100%;
                     object-fit: cover;
                     border-radius: 20px;
                 }
@@ -122,34 +134,51 @@
                 gap: 2rem;
                 margin-bottom: 3rem;
             }
-            &_text {
-                p {
-                    width: 510px;
-                }
-            }
             &_icons {
                 display: grid;
-                grid-template-columns: 200px 1fr;
+                grid-template-columns: 240px 260px;
                 grid-column-gap: 8rem;
                 grid-row-gap: 3rem;
             }
             &_icon {
-                display: flex;
+                display: grid;
                 align-items: center;
                 gap: 1rem;
+                p {
+
+                }
             }
         }
     }
 
     &-accordion {
-        margin-top: 15rem;
+        margin-top: 10rem;
         &__content {
             display: grid;
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
         }
         &__item {
             &_list {
-                margin-bottom: 1rem;
+                width: 600px;
+                margin-bottom: 2rem;
+                padding: 1rem;
+                background: $white;
+                border-radius: 15px;
+                cursor: pointer;
+            }
+            &_title {
+                display: flex;
+                justify-content: space-between;
+            }
+            &_text {
+                margin-top: 1rem;
+            }
+            &_img{
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
             }
         }
     }

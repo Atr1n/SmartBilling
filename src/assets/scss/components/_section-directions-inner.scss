@@ -1,0 +1,60 @@
+.directions-inner {
+    &-desc {
+        &__title {
+            margin-bottom: 2rem;
+        }
+        &__list {
+            li {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 29px;
+                color: $black;
+            }
+        }
+    }
+
+    &-certificates {
+        &__content {
+            display: flex;
+            gap: 3rem;
+        }
+        &__item {
+            width: 220px;
+            height: 305px;
+            margin-top: 2rem;
+            background: grey;
+            border-radius: 15px;
+        }
+    }
+
+    &-about {
+        &__content {
+            display: flex;
+            gap: 4rem;
+            grid-template-columns: repeat(2,1fr);
+        }
+        &__item {
+            &_img {
+                img {
+                    width: 100%;
+                }
+            }
+            &_form {
+                display: grid;
+                margin-top: 5rem;
+                input {
+                    width: 295px;
+                    padding: .8rem 1.5rem;
+                    margin-bottom: 1rem;
+                    text-align: center;
+                    border-radius: 10px;
+                    &:last-child {
+                        background: $blue;
+                        color: $white;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -8,6 +8,8 @@
 @import 'components/header-inner';
 @import 'components/header-burger';
 
+@import 'components/footer';
+
 @import 'components/mainPage';
 
 @import 'components/section-news';
@@ -17,8 +19,10 @@
 @import 'components/section-contacts';
 @import 'components/section-employees';
 @import 'components/section-directions';
+@import 'components/section-directions-inner';
 @import 'components/section-about';
 @import 'components/section-projects';
+@import 'components/section-projects-inner';
 
 .container {
     width: 100%;
@@ -39,6 +43,7 @@
     text-align: center;
     @media only screen and (max-width: 768px) {
         text-align: left;
+        margin-bottom: 2rem;
     }
     h1 {
         margin-bottom: 2rem;
