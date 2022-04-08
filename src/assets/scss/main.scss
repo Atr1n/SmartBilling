@@ -5,28 +5,23 @@
 
 
 @import 'components/header';
-@import 'components/header-inner';
 @import 'components/header-burger';
+
+@import 'components/mainPage';
+@import 'components/works';
+@import 'components/products';
+@import 'components/services';
+@import 'components/technology';
+
+@import 'components/nav-bottom';
 
 @import 'components/footer';
 
-@import 'components/mainPage';
 
-@import 'components/section-news';
-@import 'components/section-news-inner';
-@import 'components/section-vacancies';
-
-@import 'components/section-contacts';
-@import 'components/section-employees';
-@import 'components/section-directions';
-@import 'components/section-directions-inner';
-@import 'components/section-about';
-@import 'components/section-projects';
-@import 'components/section-projects-inner';
 
 .container {
     width: 100%;
-    max-width: 1920px;
+    max-width: 1200px;
     padding: 0 3rem;
     margin: 0 auto;
     @media only screen and (max-width: 1200px) {
@@ -183,6 +178,16 @@
     a {
         text-decoration: underline;
     }
+}
+
+
+.marquee {
+    margin-top: auto;
+}
+
+.marquee-content {
+    display: flex;
+    gap: 8rem;
 }
 
 html,body {

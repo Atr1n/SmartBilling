@@ -5,6 +5,7 @@
     &__content {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         align-items: center;
         gap: 8rem;
     }
@@ -12,6 +13,16 @@
         &_list {
             li {
                 margin-bottom: .7rem;
+            }
+        }
+        &_pdf {
+            margin-bottom: 1.5rem;
+        }
+        &_download {
+            a {
+                padding: 0.8rem 1.2rem;
+                border: 1px solid $white;
+                border-radius: 10px;
             }
         }
         &_img {
