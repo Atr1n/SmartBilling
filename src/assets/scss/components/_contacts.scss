@@ -1,0 +1,31 @@
+.contacts {
+	display: grid;
+	place-content: center;
+	&__title {
+		margin-bottom: 2rem;
+		h3 {
+			font-weight: 700;
+			font-size: 36px;
+			line-height: 130%;
+			text-align: center;
+		}
+	}
+	&__content {
+		display: flex;
+		place-content: center;
+		place-items: center;
+		gap: 2.5rem;
+	}
+	&__item {
+		display: flex;
+		place-content: center;
+		place-items: center;
+		gap: 1rem;
+		p {
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 24px;
+			color: #000000;
+		}
+	}
+}

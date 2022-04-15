@@ -1,13 +1,22 @@
 .header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 1rem;
-    background: #fff;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    z-index: 2;
-    &__logo {
+    padding: 1.5rem 0;
+    &__nav {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+    }
+    &__item {
+        &-list {
+            display: flex;
+            gap: 2rem;
+        }
+        &-btn {
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            background-color: $yellow;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
     }
 }

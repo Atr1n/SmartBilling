@@ -1,0 +1,28 @@
+.frames {
+    &__container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    &__item {
+        position: relative;
+        &-text {
+            position: absolute;
+            display: flex;
+            bottom: 4rem;
+            left: 50%;
+            transform: translateX(-50%);
+            p {
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 130%;
+                white-space: nowrap;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

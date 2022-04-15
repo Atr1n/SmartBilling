@@ -1,0 +1,32 @@
+.life {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    height: 400px;
+    background-color: $blue;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        place-items: center;
+    }
+    &__item {
+        &-desc {
+            padding: 2rem 0;
+            h2 {
+                margin-bottom: 2.3rem;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 41px;
+                color: #FFFFFF;
+            }
+            p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

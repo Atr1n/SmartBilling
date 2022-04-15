@@ -1,1 +1,2 @@
-import './burger'
+import './components/burger'
+import './components/swiper'

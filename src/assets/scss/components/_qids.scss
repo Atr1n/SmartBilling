@@ -1,0 +1,29 @@
+.qids {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+    }
+    &__item {
+        margin: 0 auto;
+        text-align: center;
+        &-desc {
+            margin-top: -3rem;
+        }
+        h2 {
+            margin-bottom: 1rem;
+            font-weight: 700;
+            font-size: 154px;
+            line-height: 130%;
+            text-transform: uppercase;
+            color: $yellow;
+        }
+        p {
+            width: 700px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 130%;
+            color: #000000;
+        }
+    }
+}

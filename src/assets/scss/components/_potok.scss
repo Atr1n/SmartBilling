@@ -1,0 +1,100 @@
+.potok {
+    margin-top: 25rem;
+    background-color: #4886FF;
+    &__img {
+        position: relative;
+        &-right {
+            position: absolute;
+            top: -422px;
+            right: -20px;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    &__title {
+        padding-top: 4rem;
+        margin-bottom: 0.5rem;
+        h2 {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 130%;
+            text-transform: uppercase;
+            color: #000000;
+        }
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 2rem 0;
+        align-items: center;
+    }
+    &__item {
+        &-content {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-column-gap: 2rem;
+        }
+        &-flow {
+            margin-bottom: 2rem;
+            h3 {
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 130%;
+                color: #FFFFFF;
+            }
+            p {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 130%;
+                color: #FFFFFF;
+            }
+        }
+        &-form {
+            width: 425px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem; 
+            background-color: #fff;
+            border-radius: 20px;
+            &-title {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 2rem;
+                h4 {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21px;
+                    text-align: center;
+                    color: #000000;
+                }
+            }
+            &-content {
+                display: grid;
+                margin-bottom: 1rem;
+                label {
+                    margin-bottom: 1rem;
+                    input {
+                        width: 100%;
+                        padding: 1rem 1.5rem;
+                        background: #F5F5F5;
+                        border-radius: 7px;
+                    }
+                }
+            }
+            &-btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                padding: 1.5rem 2.2rem;
+                background: #FFC727;
+                border-radius: 44px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                color: #000000;
+                cursor: pointer;
+            }
+        }
+    }
+}
