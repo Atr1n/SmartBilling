@@ -17,6 +17,10 @@
             line-height: 130%;
             text-transform: uppercase;
             color: $yellow;
+            @media only screen and (max-width: 1170px) {
+                width: 300px;
+                font-size: 88px;
+            }
         }
         p {
             width: 700px;
@@ -24,6 +28,10 @@
             font-size: 20px;
             line-height: 130%;
             color: #000000;
+            @media only screen and (max-width: 1170px) {
+                width: 300px;
+                font-size: 16px;
+            }
         }
     }
 }

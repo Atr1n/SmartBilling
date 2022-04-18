@@ -9,6 +9,11 @@
         align-items: center;
         gap: 3rem;
         margin-bottom: 4.5rem;
+        @media only screen and (max-width: 1170px) {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            margin-bottom: 2rem;
+        }
     }
     &__item {
         &-logo {
@@ -51,19 +56,16 @@
     }
     &__bottom {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
+        justify-content: center;
         padding: 2rem 0;
+        @media only screen and (max-width: 1170px) {
+            padding: 0;
+        }
         p {
             font-weight: 400;
             font-size: 16px;
             line-height: 20px;
             color: #000000;
-        }
-        &-item {
-            display: flex;
-            gap: 3rem;
         }
     }
 }

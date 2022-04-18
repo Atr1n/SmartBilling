@@ -1,80 +1,85 @@
-.navBurger {
-	width: 40px;
-	height: 25px;
-	margin-top: 0.5rem;
-	margin-left: 4rem;
-	box-sizing: border-box;
-	background-clip: content-box;
-	border-top: 11px solid transparent;
-	border-bottom: 11px solid transparent;
-	transform: rotate(0deg);
-	transition: all 0.25s ease-in-out;
-	z-index: 1000;
-	cursor: pointer;
-}
+@media only screen and (max-width: 1024px) {
+    .navBurger {
+        position: fixed;
+        top: 5%;
+        right: 10%;
+        width: 40px;
+        height: 25px;
+        box-sizing: border-box;
+        background-clip: content-box;
+        border-top: 11px solid transparent;
+        border-bottom: 11px solid transparent;
+        transform: rotate(0deg);
+        transition: all 0.25s ease-in-out;
+        cursor: pointer;
+        z-index: 999;
+    }
 
-.navBurger-white-bg:after,
-.navBurger-white-bg:before {
-    background: $white;
-}
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        padding: 3rem;
+        opacity: 0;
+        background: #fff;
+        visibility: hidden;
+        overflow: hidden;
+        transform-origin: left;
+        transform: scale(0);
+        transition: all 0.4s ease-in-out;
+        z-index: 100;
+    }
 
-.navBurger-black-bg:after,
-.navBurger-black-bg:before {
-    background: $black;
-}
+    .overlay.open {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1)
+    }
 
-.navBurger:after,
-.navBurger:before {
-	content: "";
-	position: absolute;
-	height: 3px;
-	width: 100%;
-	right: 0;
-	will-change: rotate;
-	transform: rotate(0deg);
-	transition: all 0.5s ease;
-}
+    .navBurger:after,
+    .navBurger:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        right: 0;
+        will-change: rotate;
+        transform: rotate(0deg);
+        transition: all 0.5s ease;
+        background: $black;
+    }
 
-.navBurger::before {
-	top: -10px;
-	width: 100%;
-	height: 3px;
-}
+    .navBurger::before {
+        width: 100%;
+        height: 3px;
+        top: -10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
 
-.navBurger.active {
-	background: transparent;
-	background-clip: content-box;
-}
+    .navBurger.active {
+        background: transparent;
+        background-clip: content-box;
+    }
 
-.navBurger.active:before {
-	transform: rotate(135deg);
-	top: 0;
-	width: 110%;
-}
+    .navBurger.active:before {
+        width: 110%;
+        top: 0;
+        transform: rotate(135deg);
+    }
 
-.navBurger.active:after {
-	bottom: 0;
-	transform: rotate(-135deg);
-	width: 110%;
-}
+    .navBurger.active:after {
+        width: 110%;
+        bottom: 0;
+        transform: rotate(-135deg);
+    }
 
-.overlay {
-    position: absolute;
-    margin-top: 1rem;
-	width: 100%;
-	height: 100vh;
-	opacity: 0;
-	visibility: hidden;
-	background: #fff;
-	overflow: hidden;
-	transform-origin: left;
-	transform: scale(0);
-	transition: all 0.4s ease-in-out;
-	z-index: 800;
-}
+    .locked {
+        overflow: hidden;
+    }
 
-.overlay.open {
-	opacity: 1;
-	visibility: visible;
-	transform: scale(1)
+    .mn {
+        background-color: #fff;
+    }
 }

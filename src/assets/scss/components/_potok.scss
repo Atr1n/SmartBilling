@@ -1,19 +1,27 @@
 .potok {
     margin-top: 25rem;
     background-color: #4886FF;
+    @media only screen and (max-width: 1170px) {
+        margin-top: 12rem;
+    }
     &__img {
         position: relative;
         &-right {
             position: absolute;
             top: -422px;
             right: -20px;
-            display: flex;
-            justify-content: flex-end;
+            @media only screen and (max-width: 1170px) {
+                right: inherit;
+                top: -254px;
+            }
         }
     }
     &__title {
         padding-top: 4rem;
         margin-bottom: 0.5rem;
+        @media only screen and (max-width: 1170px) {
+            padding-top: 6.5rem;
+        }
         h2 {
             font-weight: 700;
             font-size: 40px;
@@ -27,12 +35,19 @@
         grid-template-columns: repeat(2,1fr);
         padding: 2rem 0;
         align-items: center;
+        @media only screen and (max-width: 1170px) {
+            grid-template-columns: repeat(1,1fr);
+        }
     }
     &__item {
         &-content {
             display: grid;
             grid-template-columns: repeat(2,1fr);
             grid-column-gap: 2rem;
+            @media only screen and (max-width: 1170px) {
+                width: 300px;
+                grid-column-gap: 0;
+            }
         }
         &-flow {
             margin-bottom: 2rem;
@@ -41,12 +56,18 @@
                 font-size: 36px;
                 line-height: 130%;
                 color: #FFFFFF;
+                @media only screen and (max-width: 1170px) {
+                    font-size: 24px;
+                }
             }
             p {
                 font-weight: 400;
                 font-size: 24px;
                 line-height: 130%;
                 color: #FFFFFF;
+                @media only screen and (max-width: 1170px) {
+                    font-size: 16px;
+                }
             }
         }
         &-form {
@@ -55,6 +76,9 @@
             padding: 1.5rem 2rem; 
             background-color: #fff;
             border-radius: 20px;
+            @media only screen and (max-width: 1170px) {
+                width: 100%;
+            }
             &-title {
                 display: flex;
                 justify-content: center;
@@ -94,6 +118,9 @@
                 text-align: center;
                 color: #000000;
                 cursor: pointer;
+                @media only screen and (max-width: 1170px) {
+                    padding: 1rem 1.5rem;
+                }
             }
         }
     }
