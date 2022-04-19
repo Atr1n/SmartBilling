@@ -12,6 +12,16 @@
             @media only screen and (max-width: 1170px) {
                 display: grid;
             }
+            li {
+                a {
+                    @media only screen and (max-width: 1170px) {
+                        font-size: 24px;
+                    }
+                    @media only screen and (max-width: 320px) {
+                        font-size: 21px;
+                    }
+                }
+            }
         }
         &-btn {
             padding: 1rem 1.5rem;

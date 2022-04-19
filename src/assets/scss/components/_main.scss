@@ -27,10 +27,7 @@
 }
 
 .main {
-    display: flex;
-    height: 560px;
     @media only screen and (max-width: 1170px) {
-        height: 100%;
         padding-bottom: 1.5rem;
     }
     &__content {

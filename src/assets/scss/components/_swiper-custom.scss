@@ -1,6 +1,10 @@
 .frames {
     &-swiper {
         position: relative;
+        border-radius: 25px;
+        @media only screen and (max-width: 1170px) {
+            border-radius: 0;
+        }
     }
     &-arrows {
         position: absolute;
