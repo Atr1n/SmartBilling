@@ -4,11 +4,37 @@
     @media only screen and (max-width: 1170px) {
         margin-top: 12rem;
     }
+    &__res{
+        display: grid;
+        place-content: center;
+        grid-gap: 1rem;
+        padding-top: 2rem;
+        font-size: 18px;
+        text-align: center;
+        @media only screen and (max-width: 556px) {
+            padding-top: 1rem;
+            grid-gap: 0;
+            font-size: 16px;
+        }
+        &-suc {
+            font-size: 41px;
+            line-height: 60px;
+            color: green;
+            @media only screen and (max-width: 556px) {
+                font-size: 31px;
+                line-height: 50px;
+            }
+        }
+        &-err {
+            color: red;
+        }
+    }
+    
     &__img {
         position: relative;
         &-right {
             position: absolute;
-            top: -422px;
+            top: -439px;
             right: -20px;
             @media only screen and (max-width: 1170px) {
                 right: inherit;

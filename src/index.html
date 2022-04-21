@@ -409,19 +409,23 @@
                         </div>
                         <div class="potok__item-form-content">
                             <label>
-                                <input type="text" name="country" placeholder="Казахстан">
+                                <input id="country" type="text" name="country" placeholder="Казахстан">
                             </label>
                             <label>
-                                <input type="potok" name="potok" placeholder="Ваше имя">
+                                <input id="name" type="potok" name="potok" placeholder="Ваше имя">
                             </label>
                             <label>
-                                <input type="tel" name="tel" placeholder="Ваш телефон">
+                                <input id="phone" type="tel" name="tel" placeholder="Ваш телефон">
                             </label>
                         </div>
                         <button class="potok__item-form-btn" type="submit">
                             Призыв к действию
                         </button>
                     </form>
+                    <div class="potok__res">
+                        <p class="potok__res-suc" id="successmessage"></p>
+                        <p class="potok__res-err" id="errormessage"></p>
+                    </div>
                 </div>
             </div>
         </div>
