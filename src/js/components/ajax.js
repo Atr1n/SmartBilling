@@ -14,6 +14,16 @@ $(document).ready(function() {
   form.submit(function(event) {
     event.preventDefault()
 
+    let submit = $('.potok__item-form-btn')
+
+    submit.prop('disabled', true)
+
+    let valid = true
+
+    if (!valid) {
+        submit.prop('disabled', false)
+    }
+ 
     let name = $('#name').val()
     let country = $('#country').val()
 

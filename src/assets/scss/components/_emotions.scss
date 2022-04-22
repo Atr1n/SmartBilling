@@ -6,50 +6,55 @@
     }
     &__content {
         padding-bottom: 1rem;
-    }
-    &__item {
-        background: #FFFFFF;
-        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
-        border-top-left-radius: 28px;
-        border-top-right-radius: 28px;
-        @media only screen and (max-width: 1170px) {
-            box-shadow: none;
-        }
-        &-img {
-            img {
-                width: 100%;
-                object-fit: contain;
-                border-top-left-radius: 28px;
-                border-top-right-radius: 28px;
-                @media only screen and (max-width: 1170px) {
-                    border-radius: 0;
-                }
+        .emotions__item {
+            height: 800px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+            border-top-left-radius: 28px;
+            border-top-right-radius: 28px;
+            @media only screen and (max-width: 1536px) {
+                height: 700px;
             }
-        }
-        &-desc {
-            padding: 6rem 4rem;
             @media only screen and (max-width: 1170px) {
-                padding: 2rem;
+                box-shadow: none;
             }
-            h3 {
-                margin-bottom: 2rem;
-                font-weight: 700;
-                font-size: 24px;
-                line-height: 130%;
-                color: #000000;
-                @media only screen and (max-width: 1170px) {
-                    margin-bottom: 1rem;
-                    font-size: 21px;
+            &-img {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    border-top-left-radius: 28px;
+                    border-top-right-radius: 28px;
+                    @media only screen and (max-width: 1170px) {
+                        border-radius: 0;
+                    }
                 }
             }
-            p {
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 24px;
-                color: #000000;
-                opacity: 0.5;
-                @media only screen and (max-width: 1170px) {
-                    padding-bottom: 4rem;
+            &-desc {
+                padding: 6rem 4rem;
+                @media only screen and (max-width: 1536px) {
+                    padding: 2rem;
+                }
+                h3 {
+                    margin-bottom: 2rem;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 130%;
+                    color: #000000;
+                    @media only screen and (max-width: 1170px) {
+                        margin-bottom: 1rem;
+                        font-size: 21px;
+                    }
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #000000;
+                    opacity: 0.5;
+                    @media only screen and (max-width: 1170px) {
+                        font-size: 16px;
+                    }
                 }
             }
         }

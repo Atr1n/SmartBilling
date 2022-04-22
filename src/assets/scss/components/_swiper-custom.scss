@@ -26,10 +26,13 @@
     &-arrows {
         position: absolute;
         padding-bottom: 5rem;
-        bottom: 5%;
-        left: 39%;
+        top: 0;
+        left: 40%;
         @media only screen and (max-width: 1170px) {
             left: 18%;
+        }
+        @media only screen and (max-width: 550px) {
+            left: 45%;
         }
         .swiper-button-prev {
             left: -40px;
@@ -41,16 +44,24 @@
     .swiper-button-prev, .swuper-button-next {
         width: 60px;
         height: 60px;
-        color: #000;
-        background-color: $yellow;
+        color: $black;
+        background-color: $white;
         border-radius: 50%;
+        @media only screen and (max-width: 1170px) {
+            width: 50px;
+            height: 50px;    
         }
+    }
     .swiper-button-next, .swuper-button-prev {
         width: 60px;
         height: 60px;
-        color: #000;
-        background-color: $yellow;
+        color: $black;
+        background-color: $white;
         border-radius: 50%;
+        @media only screen and (max-width: 1170px) {
+            width: 50px;
+            height: 50px;    
+        }
     }
 }
 
@@ -77,41 +88,59 @@
     .swiper-button-prev, .swuper-button-next {
         width: 60px;
         height: 60px;
-        color: #000;
+        color: $black;
         background-color: $yellow;
         border-radius: 50%;
+            @media only screen and (max-width: 1170px) {
+            width: 50px;
+            height: 50px;    
         }
+    }
     .swiper-button-next, .swuper-button-prev {
         width: 60px;
         height: 60px;
-        color: #000;
+        color: $black;
         background-color: $yellow;
         border-radius: 50%;
+        @media only screen and (max-width: 1170px) {
+        width: 50px;
+        height: 50px;    
+        }
     }
 }
 
 .swiper-button-prev, .swuper-button-next {
     width: 60px;
     height: 60px;
-    color: #000;
+    color: $black;
     background-color: #fff;
     border-radius: 50%;
+    @media only screen and (max-width: 1170px) {
+        width: 50px;
+        height: 50px;    
+    }
 }
 .swiper-button-next, .swuper-button-prev {
     width: 60px;
     height: 60px;
-    color: #000;
+    color: $black;
     background-color: #fff;
     border-radius: 50%;
+    @media only screen and (max-width: 1170px) {
+        width: 50px;
+        height: 50px;    
+    }
 }
 
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
     position: relative;
+    top: -2px;
     left: -2px;
     content: url(/src/assets/img/arrow-left.png);
 }
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
     position: relative;
+    top: -2px;
     left: 2px;
     content: url(/src/assets/img/arrow-right.png);
 }

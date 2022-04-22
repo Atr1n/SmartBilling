@@ -2,7 +2,7 @@
 //define('C_REST_CLIENT_ID','local.5c8bb1b0891cf2.87252039');//Application ID
 //define('C_REST_CLIENT_SECRET','SakeVG5mbRdcQet45UUrt6q72AMTo7fkwXSO7Y5LYFYNCRsA6f');//Application key
 // or
-define('C_REST_WEB_HOOK_URL','https://capital-film.bitrix24.ru/rest/7/b2301xca3gpur4ba/');//url on creat Webhook
+define('C_REST_WEB_HOOK_URL','https://capital-film.bitrix24.kz/rest/6/echrt0okhnw23vd4/');//url on creat Webhook
 
 //define('C_REST_CURRENT_ENCODING','windows-1251');
 //define('C_REST_IGNORE_SSL',true);//turn off validate ssl by curl
