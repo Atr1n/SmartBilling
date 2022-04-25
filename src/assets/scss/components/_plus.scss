@@ -81,6 +81,9 @@
                 font-size: 28px;
                 line-height: 41px;
                 color: $white;
+                span {
+                    visibility: hidden;
+                }
             }
             &-pt {
                 padding-top: 4rem;

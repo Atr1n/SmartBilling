@@ -3,52 +3,51 @@ import IMask from 'imask'
 
 const element = document.getElementById('phone')
 const maskOptions = {
-  mask: '+{7} (000) 000-00-00'
+    mask: '+{7} (000) 000-00-00'
 }
 
 const mask = IMask(element, maskOptions)
 
 $(document).ready(function() {
-  let form = $('.potok__item-form')
+    let form = $('.potok__item-form')
 
-  form.submit(function(event) {
-    event.preventDefault()
+    form.submit(function(event) {
+        event.preventDefault()
 
-    let submit = $('.potok__item-form-btn')
+        let submit = $('.potok__item-form-btn')
 
-    submit.prop('disabled', true)
+        submit.prop('disabled', true)
 
-    let valid = true
+        let valid = true
 
-    if (!valid) {
-        submit.prop('disabled', false)
-    }
- 
-    let name = $('#name').val()
-    let country = $('#country').val()
+        if (!valid) {
+            submit.prop('disabled', false)
+        }
+    
+        let name = $('#name').val()
 
-    let formData = {
-      name: $('#name').val(),
-      phone: $('#phone').val(),
-      country: $('#country').val(),
-      title: `Заявка с сайта kanikulyoffline.kz от ${name} из ${country}`
-    }
+        let formData = {
+            name: $('#name').val(),
+            phone: $('#phone').val(),
+            country: '',
+            title: `Заявка с сайта kanikulyoffline.kz от ${name}`
+        }
 
-    $.ajax({
-      type: 'POST',
-      url: './assets/php/form-callback.php',
-      data: formData,
-      headers: {},
-      success: function() {
-        let suc = $('#successmessage')
-        suc.text('Ваша заявка успешно отправлена!')
+        $.ajax({
+            type: 'POST',
+            url: './assets/php/form-callback.php',
+            data: formData,
+            headers: {},
+            success: function() {
+                let suc = $('#successmessage')
+                suc.text('Ваша заявка успешно отправлена!')
 
-        form.hide(2000)
-      },
-      error: function() {
-        let err = $('#errormessage')
-        err.text('Произошла ошибка! Попробуйте еще раз.')
-      }
+                form.hide(2000)
+            },
+            error: function() {
+                let err = $('#errormessage')
+                err.text('Произошла ошибка! Попробуйте еще раз.')
+            }
+        })
     })
-  })
 })

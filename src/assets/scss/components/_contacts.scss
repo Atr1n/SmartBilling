@@ -2,18 +2,32 @@
 	display: grid;
 	place-content: center;
 	&__title {
-		margin-bottom: 2rem;
+        text-align: center;
 		h3 {
 			font-weight: 700;
 			font-size: 36px;
 			line-height: 130%;
-			text-align: center;
 		}
+        h4 {
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+            font-weight: 700;
+			font-size: 24px;
+			line-height: 130%;
+        }
+        a {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: $black;   
+        }
 	}
 	&__content {
 		display: flex;
 		place-content: center;
 		place-items: center;
+        margin: 2rem 0;
 		gap: 2.5rem;
         @media only screen and (max-width: 1170px) {
             display: grid;

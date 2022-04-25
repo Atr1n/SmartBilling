@@ -158,7 +158,7 @@
                 <div class="plus__item">
                     <div class="plus__item-color">
                         <div class="plus__item-title plus__item-title-pt">
-                            <h2 class="black">Скажем укусам нет! Ещё строка</h2>
+                            <h2 class="black">Скажем укусам нет! <span>Ещё строка</span></h2>
                         </div>
                     </div>
                     <div class="plus__item-nocolor">
@@ -461,9 +461,6 @@
                         </div>
                         <div class="potok__item-form-content">
                             <label>
-                                <input id="country" type="text" name="country" placeholder="Казахстан" required>
-                            </label>
-                            <label>
                                 <input id="name" type="text" name="name" placeholder="Ваше имя" required>
                             </label>
                             <label>
@@ -471,7 +468,7 @@
                             </label>
                         </div>
                         <button class="potok__item-form-btn" type="submit">
-                            Призыв к действию
+                            Отправить заявку
                         </button>
                     </form>
                     <div class="potok__res">
@@ -482,8 +479,8 @@
             </div>
         </div>
     </section>
-
-    <section class="about section">
+ 
+    <section id="about" class="about section">
         <div class="container">
             <div class="swiper about-swiper">
                 <div class="swiper-wrapper">
@@ -558,7 +555,8 @@
         <div class="film__container">
             <div class="film__content">
                 <div class="film__item">
-                    <img src="assets/img/film-img.png" alt="Лучший фильм" width="600" height="420">
+                    <img class="film__item-img" id="film-img" src="assets/img/film-img.png" alt="Лучший фильм" width="600" height="420">
+                    <iframe class="film__item-iframe" id="film-video" width="600" height="420" src="https://www.youtube.com/embed/d7lLvlDxRMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="film__item">
                     <article class="film__item-desc">
@@ -576,14 +574,14 @@
         </div>
     </section>
 
-    <section class="map section">
+    <!-- <section class="map section">
         <div class="map__container">
             <div class="map__title">
                 <h3>Где нас найти</h3>
             </div>
             <div class="map__2gis" id="map"></div>
         </div>
-    </section>
+    </section> -->
 
     <section id="contacts" class="contacts section">
         <div class="container">
@@ -610,6 +608,10 @@
                     <p>Twitter</p>
                 </a>
             </div>
+            <div class="contacts__title">
+                <h4>Свяжитесь с нами</h4>
+                <a href="tel:77007149711">+7 700 714 9711</a>
+            </div>
         </div>
     </section>
 
@@ -631,18 +633,16 @@
                 </div>
                 <div class="footer__item">
                     <ul class="footer__item-list">
-                        <li><a href="#">First page</a></li>
-                        <li><a href="#">First page</a></li>
-                        <li><a href="#">First page</a></li>
-                        <li><a href="#">First page</a></li>
+                        <li><a href="#life">Реальная жизнь</a></li>
+                        <li><a href="#frames">Эмоции в кадрах</a></li>
+                        <li><a href="#emotions">Лучшая версия себя</a></li>
                     </ul>
                 </div>
                 <div class="footer__item">
                     <ul class="footer__item-list">
-                        <li><a href="#">First page</a></li>
-                        <li><a href="#">First page</a></li>
-                        <li><a href="#">First page</a></li>
-                        <li><a href="#">First page</a></li>
+                        <li><a href="#qids">QIDS</a></li>
+                        <li><a href="#potok">Сезоны</a></li>
+                        <li><a href="#about">О нас говорят</a></li>
                     </ul>
                 </div>
                 <div class="footer__item">
@@ -681,8 +681,17 @@
             </div>
         </div>
     </footer>
+
+    <div class="arrow">
+        <a href="#" class="arrowUp scrollShow">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#00236A" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.58l5.995 5.988-1.416 1.414-4.579-4.574-4.59 4.574-1.416-1.414 6.006-5.988z">
+                </path>
+            </svg>
+        </a>
+    </div>
     
-    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <!-- <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
     <script type="text/javascript">
         var map;
         DG.then(function () {
@@ -692,7 +701,7 @@
             });
             DG.marker([43.220386, 76.839392]).addTo(map).bindPopup('Мы тут!');
         });
-    </script>
+    </script> -->
 
     <script type="module">
         import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
