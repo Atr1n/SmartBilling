@@ -4,7 +4,7 @@
     @media only screen and (max-width: 1170px) {
         margin-top: 12rem;
     }
-    &__res{
+    &__res {
         display: grid;
         place-content: center;
         grid-gap: 1rem;
@@ -98,7 +98,7 @@
         &-form {
             width: 425px;
             margin: 0 auto;
-            padding: 1.5rem 2rem; 
+            padding: 2.2rem 2rem; 
             background-color: #fff;
             border-radius: 20px;
             @media only screen and (max-width: 1170px) {
@@ -106,14 +106,23 @@
             }
             &-title {
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
                 margin-bottom: 2rem;
+                text-align: center;
+                h3 {
+                    font-weight: 700;
+                    font-size: 40px;
+                    color: $blue;
+                }
                 h4 {
+                    margin: 1.3rem 0;
+                    font-weight: 400;
+                    font-size: 30px;
+                }
+                p {
                     font-weight: 400;
                     font-size: 18px;
-                    line-height: 21px;
-                    text-align: center;
-                    color: #000000;
                 }
             }
             &-content {
@@ -134,9 +143,9 @@
                 justify-content: center;
                 align-items: center;
                 margin: 0 auto;
-                padding: 1.5rem 2.2rem;
+                padding: 1.2rem 2rem;
                 background: #FFC727;
-                border-radius: 44px;
+                border-radius: 25px;
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 19px;

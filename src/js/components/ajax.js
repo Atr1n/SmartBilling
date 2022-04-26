@@ -1,12 +1,13 @@
 import $ from 'jquery'
 import IMask from 'imask'
 
-const element = document.getElementById('phone')
-const maskOptions = {
-    mask: '+{7} (000) 000-00-00'
-}
+const element = document.querySelectorAll('.phone')
 
-const mask = IMask(element, maskOptions)
+element.forEach(item => {
+    const mask = IMask(item, {
+        mask: '+{7}(000)000-00-00',
+    })
+})
 
 $(document).ready(function() {
     let form = $('.potok__item-form')

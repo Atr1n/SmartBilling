@@ -1,14 +1,15 @@
 .footer {
     position: relative;
     margin-top: 3rem;
-    padding: 2rem 0;
+    padding: 3rem 0;
+    background-color: $yellow;
     &__content {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
         gap: 3rem;
-        margin-bottom: 4.5rem;
+        margin-bottom: 2.5rem;
         @media only screen and (max-width: 1170px) {
             display: grid;
             grid-template-columns: repeat(1,1fr);
@@ -57,7 +58,6 @@
     &__bottom {
         display: flex;
         justify-content: center;
-        padding: 2rem 0;
         @media only screen and (max-width: 1170px) {
             padding: 0;
         }
