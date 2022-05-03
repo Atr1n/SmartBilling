@@ -1,6 +1,6 @@
 .potok {
     margin-top: 25rem;
-    background-color: #4886FF;
+    background-color: $blue;
     @media only screen and (max-width: 1170px) {
         margin-top: 12rem;
     }
@@ -29,7 +29,7 @@
             color: red;
         }
     }
-    
+
     &__img {
         position: relative;
         &-right {
@@ -54,21 +54,24 @@
             line-height: 130%;
             text-transform: uppercase;
             color: #000000;
+            @media only screen and (max-width: 1170px) {
+                font-size: 35px;
+            }
         }
     }
     &__content {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         padding: 2rem 0;
         align-items: center;
         @media only screen and (max-width: 1170px) {
-            grid-template-columns: repeat(1,1fr);
+            grid-template-columns: repeat(1, 1fr);
         }
     }
     &__item {
         &-content {
             display: grid;
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(2, 1fr);
             grid-column-gap: 2rem;
             @media only screen and (max-width: 1170px) {
                 grid-column-gap: 1rem;
@@ -80,7 +83,7 @@
                 font-weight: 700;
                 font-size: 36px;
                 line-height: 130%;
-                color: #FFFFFF;
+                color: #ffffff;
                 @media only screen and (max-width: 1170px) {
                     font-size: 20px;
                 }
@@ -89,7 +92,7 @@
                 font-weight: 400;
                 font-size: 24px;
                 line-height: 130%;
-                color: #FFFFFF;
+                color: #ffffff;
                 @media only screen and (max-width: 1170px) {
                     font-size: 16px;
                 }
@@ -98,7 +101,8 @@
         &-form {
             width: 425px;
             margin: 0 auto;
-            padding: 2.2rem 2rem; 
+            margin-top: 1rem;
+            padding: 2.2rem 2rem;
             background-color: #fff;
             border-radius: 20px;
             @media only screen and (max-width: 1170px) {
@@ -133,7 +137,7 @@
                     input {
                         width: 100%;
                         padding: 1rem 1.5rem;
-                        background: #F5F5F5;
+                        background: #f5f5f5;
                         border-radius: 7px;
                     }
                 }
@@ -144,7 +148,7 @@
                 align-items: center;
                 margin: 0 auto;
                 padding: 1.2rem 2rem;
-                background: #FFC727;
+                background: #ffc727;
                 border-radius: 25px;
                 font-weight: 700;
                 font-size: 16px;
