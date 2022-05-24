@@ -3,26 +3,14 @@
 @import 'utils/fonts';
 @import 'utils/reset';
 
-@import 'components/swiper-custom';
 
 @import 'components/header';
 @import 'components/header-burger';
 
 @import 'components/main';
-@import 'components/plus';
-@import 'components/life';
-@import 'components/frames';
-@import 'components/emotions';
-@import 'components/qids';
-@import 'components/potok';
-@import 'components/about';
-@import 'components/film';
-@import 'components/map';
-@import 'components/contacts';
 
 @import 'components/footer';
 
-@import 'components/arrow';
 
 .container {
     width: 100%;
@@ -41,25 +29,6 @@
     @media only screen and (max-width: 556px) {
         padding: 2rem 0;
     } 
-}
-
-.des {
-    @media only screen and (max-width: 556px) {
-        display: none;
-    }
-}
-
-.mob {
-    display: none;
-    @media only screen and (max-width: 556px) {
-        display: block;
-        width: 100%;
-        object-fit: contain;
-    }
-}
-
-div .black {
-    color: #000;
 }
 
 html,body {
