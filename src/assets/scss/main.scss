@@ -1,8 +1,6 @@
 @import 'utils/vars';
 @import 'utils/mixins';
-@import 'utils/fonts';
 @import 'utils/reset';
-
 
 @import 'components/header';
 @import 'components/header-burger';
@@ -11,6 +9,19 @@
 
 @import 'components/footer';
 
+.my-btn {
+    padding: 0.7rem 3.5rem;
+    font-weight: 600;
+    font-size: 20px;
+    color: $white;
+    background: $red;
+    box-shadow: -3px 4px 7px -1px #131633;
+    border-radius: 5px;
+    transition: ease all 0.5s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
 
 .container {
     width: 100%;
@@ -28,40 +39,41 @@
     padding: 3rem 0;
     @media only screen and (max-width: 556px) {
         padding: 2rem 0;
-    } 
+    }
 }
 
-html,body {
+html,
+body {
     @media only screen and (max-width: 768px) {
         overflow-x: hidden;
     }
 }
 
 html {
-	height: 100%;
-	line-height: $mainLineHeight;
+    height: 100%;
+    line-height: $mainLineHeight;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
-	letter-spacing: 0.01em;
-    font-family: $mainFont;
+    letter-spacing: 0.01em;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
-	font-size: $size16;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-    font-family: $mainFont;
+    font-size: $size16;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Open Sans', sans-serif;
     background: linear-gradient(0deg, #fff, #fff), #c0c0c0;
 }
 
 *,
 *:before,
 *:after {
-  	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 h1,
@@ -70,17 +82,17 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0;
+    margin: 0;
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
     color: $black;
 }
 
 ul,
 li {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }

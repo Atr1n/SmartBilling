@@ -1,40 +1,26 @@
 .header {
+    position: relative;
     padding: 1.5rem 0;
-    &__nav {
+    z-index: 2;
+    @media only screen and (max-width: 1180px) {
+        position: static;
+    }
+    &__content {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media only screen and (max-width: 550px) {
+            display: grid;
+        }
+    }
+    &__logo {
+        cursor: pointer;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
     }
     &__item {
-        &-langs {
-            display: flex;
-            align-items: center;
-            margin-right: 1rem;
-            gap: 0.6rem;
-            @media only screen and (max-width: 1170px) {
-                display: grid;
-                margin-right: 0;
-            }
-            span {
-                width: 2px;
-                height: 23px;
-                background-color: #434d52;
-                @media only screen and (max-width: 1170px) {
-                    width: 23px;
-                    height: 2px;
-                }
-            }
-            &-lang {
-                font-weight: 700;
-                font-size: 20px;
-                line-height: 130%;
-                text-transform: capitalize;
-                color: #434d52;
-                &.active {
-                    color: $red;
-                }
-            }
-        }
         &-list {
             display: flex;
             gap: 2rem;
@@ -55,7 +41,7 @@
         &-btn {
             padding: 1rem 1.5rem;
             border-radius: 10px;
-            background-color: $yellow;
+            background-color: $black;
             font-weight: 500;
             font-size: 16px;
             font-weight: bold;
